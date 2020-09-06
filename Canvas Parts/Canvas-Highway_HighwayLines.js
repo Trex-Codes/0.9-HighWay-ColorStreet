@@ -14,11 +14,9 @@
 
 	// -----------------------------------------------
 
-
 	document.getElementById('Change_Object_HigWa').onclick = function() {
 	let colorasksun1 = prompt('Enter the color of the Hiwhway');
 
-		
 		// MIDDLE BASE LINE - Road line (SUP)
 		ctx.beginPath();
 		ctx.fillStyle = colorasksun1;
@@ -33,8 +31,7 @@
 		ctx.fill();
 		ctx.closePath();
 }
-// CUADROS CARRETERA 
-
+	// ROAD FRAMES
 	// (1)
 	ctx.beginPath();
 	ctx.fillStyle = "white";
@@ -101,8 +98,7 @@
 	document.getElementById('Change_Object_LinesHigWa').onclick = function() {
 	let colorasksun2 = prompt('enter the color of the Hiwhway Lines');
 
-// CUADROS CARRETERA 
-
+	// ROAD frames
 	// (1)
 	ctx.beginPath();
 	ctx.fillStyle = colorasksun2;

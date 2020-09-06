@@ -52,7 +52,7 @@
 
 	// FIGURE MOUNTAINS
 	document.getElementById('Change_Object_Moun').onclick = function() {
-	let colorasksun1 = prompt('digite el color de las MOUNTAINS');
+	let colorasksun1 = prompt('Enter the color of the mountains');
 	
 	// (1)
 	ctx.beginPath();
