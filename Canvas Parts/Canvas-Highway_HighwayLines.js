@@ -1,4 +1,4 @@
-	// LINEA MEDIO BASE  - Linea carretera (SUP)
+		// MIDDLE BASE LINE - Road line (SUP)
 		ctx.beginPath();
 		ctx.fillStyle = "#C1C1C1FF";
 		ctx.strokeStyle = "black";
@@ -16,9 +16,10 @@
 
 
 	document.getElementById('Change_Object_HigWa').onclick = function() {
-	let colorasksun1 = prompt('digite el color de la Hiwhway');
+	let colorasksun1 = prompt('Enter the color of the Hiwhway');
 
-		// LINEA MEDIO BASE  - Linea carretera (SUP)
+		
+		// MIDDLE BASE LINE - Road line (SUP)
 		ctx.beginPath();
 		ctx.fillStyle = colorasksun1;
 		ctx.strokeStyle = "black";
@@ -98,7 +99,7 @@
 // -----------------------------------------------
 
 	document.getElementById('Change_Object_LinesHigWa').onclick = function() {
-	let colorasksun2 = prompt('digite el color de las Hiwhway Lines');
+	let colorasksun2 = prompt('enter the color of the Hiwhway Lines');
 
 // CUADROS CARRETERA 
 
