@@ -1,4 +1,9 @@
-		
+function ColorCuadro() {
+	const callColorSun = document.getElementById('cuadroColor');
+	callColorSun.style.display = 'inherit';
+	callColorSun.style.visibility = 'visible';
+
+}		
 		// Context declared
 		var canvas = document.getElementById('CanvasHtml');
 		var ctx  = canvas.getContext("2d");
