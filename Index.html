@@ -18,75 +18,281 @@
 			visibility: hidden;
 		}
 
+		#cuadroMountains{
+			display: none;
+			visibility: hidden;
+		}
+
+		#cuadroHighWay{
+			display: none;
+			visibility: hidden;
+		}
+
+		#cuadroHighWayLines{
+			display:  none;
+			visibility: hidden;
+		}
+
+		#cuadroSky{
+			display: none;
+			visibility: hidden;
+		}
+
+		.SunRects:hover{
+			border: 1px solid black;
+		}
+
+		#hide_Btns{
+			background-color: gold;
+ 				margin: none;
+		}
+
+		/*Btns to call and change space in themself*/
+
+		button.btn_Sun{
+			margin-left: 0;
+		}
+
+		button.btn_Moun{
+			margin-left: 100;
+		}
+
+		button.btn_Higwa{
+			margin-left: 110;
+		}
+
+		button.btn_HigwaLine{
+			margin-left: 100;
+		}
+
+		button.btn_Sky{
+			margin-left: 100;
+		}
+
 	</style>
 </head>
 <body>
 	<canvas id="CanvasHtml" width="1585" height="680"></canvas>
 
-	<button id="Change_Object_Sun">Change color <br> Sun</button>
-	<button id="Change_Object_Moun">Change color <br> Mountains</button>
-	<button id="Change_Object_HigWa">Change color <br> Highway</button>
-	<button id="Change_Object_LinesHigWa">Change color <br> Lines Highway</button>
-	<button id="Change_Object_Sky">Change color <br> Sky</button>
+	<button class="btn_Sun" type="submit" id="Change_Object_Sun">Change color <br> Sun</button>
+	<button class="btn_Moun" type="submit" id="Change_Object_Moun">Change color <br> Mountains</button>
+	<button class="btn_Higwa" type="submit" id="Change_Object_HigWa">Change color <br> Highway</button>
+	<button class="btn_HigwaLine" type="submit" id="Change_Object_LinesHigWa">Change color <br> Lines Highway</button>
+	<button class="btn_Sky" class="btns" type="submit" id="Change_Object_Sky">Change color <br> Sky</button>
 
-	<div id="cuadroSun1" style="width: 190; border: 1px solid black; height: 125; margin-left: 45; bottom: 80; position: absolute; background-color: gold">
+	<button type="submit" id="hide_Btns">Hide BTNS</button>
 
+	<!-- Sun Structure -->
+	<div class="RectContent" id="cuadroSun1" style="width: 190; border: 1px solid black; height: 125; margin-left: 5; bottom: 80; position: absolute; background-color: #F8FCBFFF">
 
-					<div id="fatherColor1" style=" position: absolute; width: 25; height: 25; background-color: aquamarine; margin-left: 5; margin-top: 20;"></div>
+					<div class="SunRects" id="fatherColor1" style=" position: absolute; width: 25; height: 25; background-color: aquamarine; margin-left: 5; margin-top: 20;"></div>
 
-					<div id="fatherColor2" class="stylesDivs" style="position: absolute; width: 25; height: 25; background-color: aqua; margin-left: 35; margin-top: 20;"></div>
+					<div class="SunRects" id="fatherColor2" class="stylesDivs" style="position: absolute; width: 25; height: 25; background-color: aqua; margin-left: 35; margin-top: 20;"></div>
 
-					<div id="fatherColor3" class="stylesDivs" style="position: absolute; width: 25; height: 25; background-color: bisque; margin-left: 65;margin-top: 20;"></div>
+					<div class="SunRects" id="fatherColor3" class="stylesDivs" style="position: absolute; width: 25; height: 25; background-color: bisque; margin-left: 65;margin-top: 20;"></div>
 
-					<div id="fatherColor4" class="stylesDivs" style="position: absolute; width: 25; height: 25; background-color: blue; margin-left: 95;margin-top: 20;"></div>
+					<div class="SunRects" id="fatherColor4" class="stylesDivs" style="position: absolute; width: 25; height: 25; background-color: blue; margin-left: 95;margin-top: 20;"></div>
 
-					<div id="fatherColor5" class="stylesDivs" style="position: absolute; width: 25; height: 25; background-color: cadetblue; margin-left: 125;margin-top: 20;"></div>
+					<div class="SunRects" id="fatherColor5" class="stylesDivs" style="position: absolute; width: 25; height: 25; background-color: cadetblue; margin-left: 125;margin-top: 20;"></div>
 
-					<div id="fatherColor6" class="stylesDivs" style="position: absolute; width: 25; height: 25; background-color: crimson; margin-left: 155;margin-top: 20;"></div>
+					<div class="SunRects" id="fatherColor6" class="stylesDivs" style="position: absolute; width: 25; height: 25; background-color: crimson; margin-left: 155;margin-top: 20;"></div>
 
-					<div id="fatherColor1" style=" position: absolute; width: 25; height: 25; background-color: coral; margin-left: 5; margin-top: 55;"></div>
+					<div class="SunRects" id="fatherColor7" style=" position: absolute; width: 25; height: 25; background-color: palevioletred; margin-left: 5; margin-top: 55;"></div>
 
-					<div id="fatherColor2" class="stylesDivs" style="position: absolute; width: 25; height: 25; background-color: darkgreen; margin-left: 35; margin-top: 55;"></div>
+					<div class="SunRects" id="fatherColor8" class="stylesDivs" style="position: absolute; width: 25; height: 25; background-color: olive; margin-left: 35; margin-top: 55;"></div>
 
-					<div id="fatherColor3" class="stylesDivs" style="position: absolute; width: 25; height: 25; background-color: darkkhaki; margin-left: 65;margin-top: 55;"></div>
+					<div class="SunRects" id="fatherColor9" class="stylesDivs" style="position: absolute; width: 25; height: 25; background-color: mintcream; margin-left: 65;margin-top: 55;"></div>
 
-					<div id="fatherColor4" class="stylesDivs" style="position: absolute; width: 25; height: 25; background-color: darkorchid; margin-left: 95;margin-top: 55;"></div>
+					<div class="SunRects" id="fatherColor10" class="stylesDivs" style="position: absolute; width: 25; height: 25; background-color: peru; margin-left: 95;margin-top: 55;"></div>
 
-					<div id="fatherColor5" class="stylesDivs" style="position: absolute; width: 25; height: 25; background-color: salmon; margin-left: 125;margin-top: 55;"></div>
+					<div class="SunRects" id="fatherColor11" class="stylesDivs" style="position: absolute; width: 25; height: 25; background-color: royalblue; margin-left: 125;margin-top: 55;"></div>
 
-					<div id="fatherColor6" class="stylesDivs" style="position: absolute; width: 25; height: 25; background-color: plum; margin-left: 155;margin-top: 55;"></div>
+					<div class="SunRects" id="fatherColor12" class="stylesDivs" style="position: absolute; width: 25; height: 25; background-color: springgreen; margin-left: 155;margin-top: 55;"></div>
 
-					<div id="fatherColor1" style=" position: absolute; width: 25; height: 25; background-color: palevioletred; margin-left: 5; margin-top: 55;"></div>
+					<div class="SunRects" id="fatherColor13" style=" position: absolute; width: 25; height: 25; background-color: peachpuff; margin-left: 5; margin-top: 90;"></div>
 
-					<div id="fatherColor2" class="stylesDivs" style="position: absolute; width: 25; height: 25; background-color: olive; margin-left: 35; margin-top: 55;"></div>
+					<div class="SunRects" id="fatherColor14" class="stylesDivs" style="position: absolute; width: 25; height: 25; background-color: rosybrown; margin-left: 35; margin-top: 90;"></div>
 
-					<div id="fatherColor3" class="stylesDivs" style="position: absolute; width: 25; height: 25; background-color: mintcream; margin-left: 65;margin-top: 55;"></div>
+					<div class="SunRects" id="fatherColor15" class="stylesDivs" style="position: absolute; width: 25; height: 25; background-color: lightgreen; margin-left: 65;margin-top: 90;"></div>
 
-					<div id="fatherColor4" class="stylesDivs" style="position: absolute; width: 25; height: 25; background-color: peru; margin-left: 95;margin-top: 55;"></div>
+					<div class="SunRects" id="fatherColor16" class="stylesDivs" style="position: absolute; width: 25; height: 25; background-color: orange; margin-left: 95;margin-top: 90;"></div>
 
-					<div id="fatherColor5" class="stylesDivs" style="position: absolute; width: 25; height: 25; background-color: royalblue; margin-left: 125;margin-top: 55;"></div>
+					<div class="SunRects" id="fatherColor17" class="stylesDivs" style="position: absolute; width: 25; height: 25; background-color: lavender; margin-left: 125;margin-top: 90;"></div>
 
-					<div id="fatherColor6" class="stylesDivs" style="position: absolute; width: 25; height: 25; background-color: springgreen; margin-left: 155;margin-top: 55;"></div>
-
-					<div id="fatherColor1" style=" position: absolute; width: 25; height: 25; background-color: peachpuff; margin-left: 5; margin-top: 90;"></div>
-
-					<div id="fatherColor2" class="stylesDivs" style="position: absolute; width: 25; height: 25; background-color: rosybrown; margin-left: 35; margin-top: 90;"></div>
-
-					<div id="fatherColor3" class="stylesDivs" style="position: absolute; width: 25; height: 25; background-color: mintcream; margin-left: 65;margin-top: 90;"></div>
-
-					<div id="fatherColor4" class="stylesDivs" style="position: absolute; width: 25; height: 25; background-color: orange; margin-left: 95;margin-top: 90;"></div>
-
-					<div id="fatherColor5" class="stylesDivs" style="position: absolute; width: 25; height: 25; background-color: lavender; margin-left: 125;margin-top: 90;"></div>
-
-					<div id="fatherColor6" class="stylesDivs" style="position: absolute; width: 25; height: 25; background-color: indigo; margin-left: 155;margin-top: 90;"></div>
-
-					
+					<div class="SunRects" id="fatherColor18" class="stylesDivs" style="position: absolute; width: 25; height: 25; background-color: indigo; margin-left: 155;margin-top: 90;"></div>
 	</div>
+			<!--------------------------------------------------------------------------------------------- -->
+
+	<!-- Mountains Structure -->
+	<div class="RectContent" id="cuadroMountains" style="width: 190; border: 1px solid black; height: 125; margin-left: 215; bottom: 80; position: absolute; background-color: #D1D1D1FF">
+
+					<div class="SunRects" id="MontColor1" style=" position: absolute; width: 25; height: 25; background-color: aquamarine; margin-left: 5; margin-top: 20;"></div>
+
+					<div class="SunRects" id="MontColor2" class="stylesDivs" style="position: absolute; width: 25; height: 25; background-color: aqua; margin-left: 35; margin-top: 20;"></div>
+
+					<div class="SunRects" id="MontColor3" class="stylesDivs" style="position: absolute; width: 25; height: 25; background-color: bisque; margin-left: 65;margin-top: 20;"></div>
+
+					<div class="SunRects" id="MontColor4" class="stylesDivs" style="position: absolute; width: 25; height: 25; background-color: blue; margin-left: 95;margin-top: 20;"></div>
+
+					<div class="SunRects" id="MontColor5" class="stylesDivs" style="position: absolute; width: 25; height: 25; background-color: cadetblue; margin-left: 125;margin-top: 20;"></div>
+
+					<div class="SunRects" id="MontColor6" class="stylesDivs" style="position: absolute; width: 25; height: 25; background-color: crimson; margin-left: 155;margin-top: 20;"></div>
+
+					<div class="SunRects" id="MontColor7" style=" position: absolute; width: 25; height: 25; background-color: palevioletred; margin-left: 5; margin-top: 55;"></div>
+
+					<div class="SunRects" id="MontColor8" class="stylesDivs" style="position: absolute; width: 25; height: 25; background-color: olive; margin-left: 35; margin-top: 55;"></div>
+
+					<div class="SunRects" id="MontColor9" class="stylesDivs" style="position: absolute; width: 25; height: 25; background-color: mintcream; margin-left: 65;margin-top: 55;"></div>
+
+					<div class="SunRects" id="MontColor10" class="stylesDivs" style="position: absolute; width: 25; height: 25; background-color: peru; margin-left: 95;margin-top: 55;"></div>
+
+					<div class="SunRects" id="MontColor11" class="stylesDivs" style="position: absolute; width: 25; height: 25; background-color: royalblue; margin-left: 125;margin-top: 55;"></div>
+
+					<div class="SunRects" id="MontColor12" class="stylesDivs" style="position: absolute; width: 25; height: 25; background-color: springgreen; margin-left: 155;margin-top: 55;"></div>
+
+					<div class="SunRects" id="MontColor13" style=" position: absolute; width: 25; height: 25; background-color: peachpuff; margin-left: 5; margin-top: 90;"></div>
+
+					<div class="SunRects" id="MontColor14" class="stylesDivs" style="position: absolute; width: 25; height: 25; background-color: rosybrown; margin-left: 35; margin-top: 90;"></div>
+
+					<div class="SunRects" id="MontColor15" class="stylesDivs" style="position: absolute; width: 25; height: 25; background-color: lightgreen; margin-left: 65;margin-top: 90;"></div>
+
+					<div class="SunRects" id="MontColor16" class="stylesDivs" style="position: absolute; width: 25; height: 25; background-color: orange; margin-left: 95;margin-top: 90;"></div>
+
+					<div class="SunRects" id="MontColor17" class="stylesDivs" style="position: absolute; width: 25; height: 25; background-color: lavender; margin-left: 125;margin-top: 90;"></div>
+
+					<div class="SunRects" id="MontColor18" class="stylesDivs" style="position: absolute; width: 25; height: 25; background-color: indigo; margin-left: 155;margin-top: 90;"></div>
 	</div>
+
+		<!--------------------------------------------------------------------------------------------- -->
+
+	<!-- HighWay Structure -->
+	<div class="RectContent" id="cuadroHighWay" style="width: 190; border: 1px solid black; height: 125; margin-left: 430; bottom: 80; position: absolute; background-color: #C0EEF6FF">
+
+					<div class="SunRects" id="Highwaycolor1" style=" position: absolute; width: 25; height: 25; background-color: aquamarine; margin-left: 5; margin-top: 20;"></div>
+
+					<div class="SunRects" id="Highwaycolor2" class="stylesDivs" style="position: absolute; width: 25; height: 25; background-color: aqua; margin-left: 35; margin-top: 20;"></div>
+
+					<div class="SunRects" id="Highwaycolor3" class="stylesDivs" style="position: absolute; width: 25; height: 25; background-color: bisque; margin-left: 65;margin-top: 20;"></div>
+
+					<div class="SunRects" id="Highwaycolor4" class="stylesDivs" style="position: absolute; width: 25; height: 25; background-color: blue; margin-left: 95;margin-top: 20;"></div>
+
+					<div class="SunRects" id="Highwaycolor5" class="stylesDivs" style="position: absolute; width: 25; height: 25; background-color: cadetblue; margin-left: 125;margin-top: 20;"></div>
+
+					<div class="SunRects" id="Highwaycolor6" class="stylesDivs" style="position: absolute; width: 25; height: 25; background-color: crimson; margin-left: 155;margin-top: 20;"></div>
+
+					<div class="SunRects" id="Highwaycolor7" style=" position: absolute; width: 25; height: 25; background-color: palevioletred; margin-left: 5; margin-top: 55;"></div>
+
+					<div class="SunRects" id="Highwaycolor8" class="stylesDivs" style="position: absolute; width: 25; height: 25; background-color: olive; margin-left: 35; margin-top: 55;"></div>
+
+					<div class="SunRects" id="Highwaycolor9" class="stylesDivs" style="position: absolute; width: 25; height: 25; background-color: mintcream; margin-left: 65;margin-top: 55;"></div>
+
+					<div class="SunRects" id="Highwaycolor10" class="stylesDivs" style="position: absolute; width: 25; height: 25; background-color: peru; margin-left: 95;margin-top: 55;"></div>
+
+					<div class="SunRects" id="Highwaycolor11" class="stylesDivs" style="position: absolute; width: 25; height: 25; background-color: royalblue; margin-left: 125;margin-top: 55;"></div>
+
+					<div class="SunRects" id="Highwaycolor12" class="stylesDivs" style="position: absolute; width: 25; height: 25; background-color: springgreen; margin-left: 155;margin-top: 55;"></div>
+
+					<div class="SunRects" id="Highwaycolor13" style=" position: absolute; width: 25; height: 25; background-color: peachpuff; margin-left: 5; margin-top: 90;"></div>
+
+					<div class="SunRects" id="Highwaycolor14" class="stylesDivs" style="position: absolute; width: 25; height: 25; background-color: rosybrown; margin-left: 35; margin-top: 90;"></div>
+
+					<div class="SunRects" id="Highwaycolor15" class="stylesDivs" style="position: absolute; width: 25; height: 25; background-color: lightgreen; margin-left: 65;margin-top: 90;"></div>
+
+					<div class="SunRects" id="Highwaycolor16" class="stylesDivs" style="position: absolute; width: 25; height: 25; background-color: orange; margin-left: 95;margin-top: 90;"></div>
+
+					<div class="SunRects" id="Highwaycolor17" class="stylesDivs" style="position: absolute; width: 25; height: 25; background-color: lavender; margin-left: 125;margin-top: 90;"></div>
+
+					<div class="SunRects" id="Highwaycolor18" class="stylesDivs" style="position: absolute; width: 25; height: 25; background-color: indigo; margin-left: 155;margin-top: 90;"></div>
+		</div>
+				<!--------------------------------------------------------------------------------------------- -->
+
+					<!-- HighwayLine Structure -->
+	<div class="RectContent" id="cuadroHighWayLines" style="width: 190; border: 1px solid black; height: 125; margin-left: 650; bottom: 80; position: absolute; background-color: #FFBCF6FF">
+
+					<div class="SunRects" id="HighwayLinescolor1" style=" position: absolute; width: 25; height: 25; background-color: aquamarine; margin-left: 5; margin-top: 20;"></div>
+
+					<div class="SunRects" id="HighwayLinescolor2" class="stylesDivs" style="position: absolute; width: 25; height: 25; background-color: aqua; margin-left: 35; margin-top: 20;"></div>
+
+					<div class="SunRects" id="HighwayLinescolor3" class="stylesDivs" style="position: absolute; width: 25; height: 25; background-color: bisque; margin-left: 65;margin-top: 20;"></div>
+
+					<div class="SunRects" id="HighwayLinescolor4" class="stylesDivs" style="position: absolute; width: 25; height: 25; background-color: blue; margin-left: 95;margin-top: 20;"></div>
+
+					<div class="SunRects" id="HighwayLinescolor5" class="stylesDivs" style="position: absolute; width: 25; height: 25; background-color: cadetblue; margin-left: 125;margin-top: 20;"></div>
+
+					<div class="SunRects" id="HighwayLinescolor6" class="stylesDivs" style="position: absolute; width: 25; height: 25; background-color: crimson; margin-left: 155;margin-top: 20;"></div>
+
+					<div class="SunRects" id="HighwayLinescolor7" style=" position: absolute; width: 25; height: 25; background-color: palevioletred; margin-left: 5; margin-top: 55;"></div>
+
+					<div class="SunRects" id="HighwayLinescolor8" class="stylesDivs" style="position: absolute; width: 25; height: 25; background-color: olive; margin-left: 35; margin-top: 55;"></div>
+
+					<div class="SunRects" id="HighwayLinescolor9" class="stylesDivs" style="position: absolute; width: 25; height: 25; background-color: mintcream; margin-left: 65;margin-top: 55;"></div>
+
+					<div class="SunRects" id="HighwayLinescolor10" class="stylesDivs" style="position: absolute; width: 25; height: 25; background-color: peru; margin-left: 95;margin-top: 55;"></div>
+
+					<div class="SunRects" id="HighwayLinescolor11" class="stylesDivs" style="position: absolute; width: 25; height: 25; background-color: royalblue; margin-left: 125;margin-top: 55;"></div>
+
+					<div class="SunRects" id="HighwayLinescolor12" class="stylesDivs" style="position: absolute; width: 25; height: 25; background-color: springgreen; margin-left: 155;margin-top: 55;"></div>
+
+					<div class="SunRects" id="HighwayLinescolor13" style=" position: absolute; width: 25; height: 25; background-color: peachpuff; margin-left: 5; margin-top: 90;"></div>
+
+					<div class="SunRects" id="HighwayLinescolor14" class="stylesDivs" style="position: absolute; width: 25; height: 25; background-color: rosybrown; margin-left: 35; margin-top: 90;"></div>
+
+					<div class="SunRects" id="HighwayLinescolor15" class="stylesDivs" style="position: absolute; width: 25; height: 25; background-color: lightgreen; margin-left: 65;margin-top: 90;"></div>
+
+					<div class="SunRects" id="HighwayLinescolor16" class="stylesDivs" style="position: absolute; width: 25; height: 25; background-color: orange; margin-left: 95;margin-top: 90;"></div>
+
+					<div class="SunRects" id="HighwayLinescolor17" class="stylesDivs" style="position: absolute; width: 25; height: 25; background-color: lavender; margin-left: 125;margin-top: 90;"></div>
+
+					<div class="SunRects" id="HighwayLinescolor18" class="stylesDivs" style="position: absolute; width: 25; height: 25; background-color: indigo; margin-left: 155;margin-top: 90;"></div>
+	</div>
+
+		<!--------------------------------------------------------------------------------------------- -->
+
+					<!-- Sky Structure -->
+	<div class="RectContent" id="cuadroSky" style="width: 190; border: 1px solid black; height: 125; margin-left: 870; bottom: 80; position: absolute; background-color: #F7ADA0FF">
+
+					<div class="SunRects" id="Skycolor1" style=" position: absolute; width: 25; height: 25; background-color: aquamarine; margin-left: 5; margin-top: 20;"></div>
+
+					<div class="SunRects" id="Skycolor2" class="stylesDivs" style="position: absolute; width: 25; height: 25; background-color: aqua; margin-left: 35; margin-top: 20;"></div>
+
+					<div class="SunRects" id="Skycolor3" class="stylesDivs" style="position: absolute; width: 25; height: 25; background-color: bisque; margin-left: 65;margin-top: 20;"></div>
+
+					<div class="SunRects" id="Skycolor4" class="stylesDivs" style="position: absolute; width: 25; height: 25; background-color: blue; margin-left: 95;margin-top: 20;"></div>
+
+					<div class="SunRects" id="Skycolor5" class="stylesDivs" style="position: absolute; width: 25; height: 25; background-color: cadetblue; margin-left: 125;margin-top: 20;"></div>
+
+					<div class="SunRects" id="Skycolor6" class="stylesDivs" style="position: absolute; width: 25; height: 25; background-color: crimson; margin-left: 155;margin-top: 20;"></div>
+
+					<div class="SunRects" id="Skycolor7" style=" position: absolute; width: 25; height: 25; background-color: palevioletred; margin-left: 5; margin-top: 55;"></div>
+
+					<div class="SunRects" id="Skycolor8" class="stylesDivs" style="position: absolute; width: 25; height: 25; background-color: olive; margin-left: 35; margin-top: 55;"></div>
+
+					<div class="SunRects" id="Skycolor9" class="stylesDivs" style="position: absolute; width: 25; height: 25; background-color: mintcream; margin-left: 65;margin-top: 55;"></div>
+
+					<div class="SunRects" id="Skycolor10" class="stylesDivs" style="position: absolute; width: 25; height: 25; background-color: peru; margin-left: 95;margin-top: 55;"></div>
+
+					<div class="SunRects" id="Skycolor11" class="stylesDivs" style="position: absolute; width: 25; height: 25; background-color: royalblue; margin-left: 125;margin-top: 55;"></div>
+
+					<div class="SunRects" id="Skycolor12" class="stylesDivs" style="position: absolute; width: 25; height: 25; background-color: springgreen; margin-left: 155;margin-top: 55;"></div>
+
+					<div class="SunRects" id="Skycolor13" style=" position: absolute; width: 25; height: 25; background-color: peachpuff; margin-left: 5; margin-top: 90;"></div>
+
+					<div class="SunRects" id="Skycolor14" class="stylesDivs" style="position: absolute; width: 25; height: 25; background-color: rosybrown; margin-left: 35; margin-top: 90;"></div>
+
+					<div class="SunRects" id="Skycolor15" class="stylesDivs" style="position: absolute; width: 25; height: 25; background-color: lightgreen; margin-left: 65;margin-top: 90;"></div>
+
+					<div class="SunRects" id="Skycolor16" class="stylesDivs" style="position: absolute; width: 25; height: 25; background-color: orange; margin-left: 95;margin-top: 90;"></div>
+
+					<div class="SunRects" id="Skycolor17" class="stylesDivs" style="position: absolute; width: 25; height: 25; background-color: lavender; margin-left: 125;margin-top: 90;"></div>
+
+					<div class="SunRects" id="Skycolor18" class="stylesDivs" style="position: absolute; width: 25; height: 25; background-color: indigo; margin-left: 155;margin-top: 90;"></div>
+	</div>
+
 </body>
 	<script type="text/javascript" src="canvas.js"></script>
-	<script type="text/javascript" src="Canvas Parts/Canvas_Sun.js"></script>
+	<script type="text/javascript" src="Canvas Parts/Canvas-Sun.js"></script>
 	<script type="text/javascript" src="Canvas Parts/Canvas-Mountains.js"></script>
-	<script type="text/javascript" src="Canvas Parts/Canvas-Highway_HighwayLines.js"></script>
+	<script type="text/javascript" src="Canvas Parts/Canvas-Highway.js"></script>
+	<script type="text/javascript" src="Canvas Parts/Canvas-LinesHighWay.js"></script>
 	<script type="text/javascript" src="Canvas Parts/Canvas-Sky.js"></script>
 </html>
