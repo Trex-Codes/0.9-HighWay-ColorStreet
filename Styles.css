@@ -1,0 +1,64 @@
+	canvas{
+			background-color: lightblue;
+			border: 1px solid black;
+		}
+		
+		button{
+			margin: 10px;
+		}
+
+		#cuadroSun1{
+			display: none;
+			visibility: hidden;
+		}
+
+		#cuadroMountains{
+			display: none;
+			visibility: hidden;
+		}
+
+		#cuadroHighWay{
+			display: none;
+			visibility: hidden;
+		}
+
+		#cuadroHighWayLines{
+			display:  none;
+			visibility: hidden;
+		}
+
+		#cuadroSky{
+			display: none;
+			visibility: hidden;
+		}
+
+		.SunRects:hover{
+			border: 1px solid black;
+		}
+
+		#hide_Btns{
+			background-color: gold;
+ 				margin: none;
+		}
+
+		/*Btns to call and change space in themself*/
+
+		button.btn_Sun{
+			margin-left: 0;
+		}
+
+		button.btn_Moun{
+			margin-left: 100;
+		}
+
+		button.btn_Higwa{
+			margin-left: 110;
+		}
+
+		button.btn_HigwaLine{
+			margin-left: 100;
+		}
+
+		button.btn_Sky{
+			margin-left: 100;
+		}
