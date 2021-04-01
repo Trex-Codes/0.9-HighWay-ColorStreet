@@ -1,54 +1,52 @@
-	// (1)
-	ctx.beginPath();
-	ctx.fillStyle = 'green';
-	ctx.strokeStyle = "black";
-	ctx.moveTo(0, 400);
-	ctx.quadraticCurveTo(158, -50, 317, 400);
-	ctx.stroke();
-	ctx.fill();
-	ctx.closePath();
+// (1)
+ctx.beginPath();
+ctx.fillStyle = 'green';
+ctx.strokeStyle = "black";
+ctx.moveTo(0, 400);
+ctx.quadraticCurveTo(158, -50, 317, 400);
+ctx.stroke();
+ctx.fill();
+ctx.closePath();
 
-	// (2)
-	ctx.beginPath();
-	ctx.fillStyle = 'green';
-	ctx.strokeStyle = "black";
-	ctx.moveTo(317, 400);
-	ctx.quadraticCurveTo(474, -50, 634, 400);
-	ctx.stroke();
-	ctx.fill();
-	ctx.closePath();
+// (2)
+ctx.beginPath();
+ctx.fillStyle = 'green';
+ctx.strokeStyle = "black";
+ctx.moveTo(317, 400);
+ctx.quadraticCurveTo(474, -50, 634, 400);
+ctx.stroke();
+ctx.fill();
+ctx.closePath();
 
-	// (3)
-	ctx.beginPath();
-	ctx.fillStyle = 'green';
-	ctx.strokeStyle = "black";
-	ctx.moveTo(634, 400);
-	ctx.quadraticCurveTo(790, -50, 951, 400);
-	ctx.stroke();
-	ctx.fill();
-	ctx.closePath();
+// (3)
+ctx.beginPath();
+ctx.fillStyle = 'green';
+ctx.strokeStyle = "black";
+ctx.moveTo(634, 400);
+ctx.quadraticCurveTo(790, -50, 951, 400);
+ctx.stroke();
+ctx.fill();
+ctx.closePath();
 
-	// (4)
-	ctx.beginPath();
-	ctx.fillStyle = 'green';
-	ctx.strokeStyle = "black";
-	ctx.moveTo(951, 400);
-	ctx.quadraticCurveTo(1106, -50, 1268, 400);
-	ctx.stroke();
-	ctx.fill();
-	ctx.closePath();
+// (4)
+ctx.beginPath();
+ctx.fillStyle = 'green';
+ctx.strokeStyle = "black";
+ctx.moveTo(951, 400);
+ctx.quadraticCurveTo(1106, -50, 1268, 400);
+ctx.stroke();
+ctx.fill();
+ctx.closePath();
 
-	// (5)
-	ctx.beginPath();
-	ctx.fillStyle = 'green';
-	ctx.strokeStyle = "black";
-	ctx.moveTo(1268, 400);
-	ctx.quadraticCurveTo(1422, -50, 1585, 400);
-	ctx.stroke();
-	ctx.fill();
-	ctx.closePath();
-
-// -----------------------------------------------
+// (5)
+ctx.beginPath();
+ctx.fillStyle = 'green';
+ctx.strokeStyle = "black";
+ctx.moveTo(1268, 400);
+ctx.quadraticCurveTo(1422, -50, 1585, 400);
+ctx.stroke();
+ctx.fill();
+ctx.closePath();
 
 document.getElementById('Change_Object_Moun').onclick = function() {
 	const callColorMountains = document.getElementById('cuadroMountains');
@@ -58,6 +56,7 @@ document.getElementById('Change_Object_Moun').onclick = function() {
 
 // Call color and gree event onclick 
 document.getElementById('MontColor1').onclick = function() {
+
 	// (1)
 	ctx.beginPath();
 	ctx.fillStyle = 'aquamarine';
@@ -108,8 +107,10 @@ document.getElementById('MontColor1').onclick = function() {
 	ctx.fill();
 	ctx.closePath();
 }
+
 document.getElementById('MontColor2').onclick = function() {
-// (1)
+
+	// (1)
 	ctx.beginPath();
 	ctx.fillStyle = 'aqua';
 	ctx.strokeStyle = "black";
@@ -159,8 +160,10 @@ document.getElementById('MontColor2').onclick = function() {
 	ctx.fill();
 	ctx.closePath();	
 }
+
 document.getElementById('MontColor3').onclick = function() {
-// (1)
+
+	// (1)
 	ctx.beginPath();
 	ctx.fillStyle = 'bisque';
 	ctx.strokeStyle = "black";
@@ -210,7 +213,9 @@ document.getElementById('MontColor3').onclick = function() {
 	ctx.fill();
 	ctx.closePath();	
 }
+
 document.getElementById('MontColor4').onclick = function() {
+
 	// (1)
 	ctx.beginPath();
 	ctx.fillStyle = 'blue';
@@ -261,7 +266,9 @@ document.getElementById('MontColor4').onclick = function() {
 	ctx.fill();
 	ctx.closePath();
 }
+
 document.getElementById('MontColor5').onclick = function() {
+
 	// (1)
 	ctx.beginPath();
 	ctx.fillStyle = 'cadetblue';
@@ -312,7 +319,9 @@ document.getElementById('MontColor5').onclick = function() {
 	ctx.fill();
 	ctx.closePath();
 }
+
 document.getElementById('MontColor6').onclick = function() {
+
 	// (1)
 	ctx.beginPath();
 	ctx.fillStyle = 'crimson';
@@ -363,7 +372,9 @@ document.getElementById('MontColor6').onclick = function() {
 	ctx.fill();
 	ctx.closePath();
 }
+
 document.getElementById('MontColor7').onclick = function() {
+
 	// (1)
 	ctx.beginPath();
 	ctx.fillStyle = 'palevioletred';
@@ -414,7 +425,9 @@ document.getElementById('MontColor7').onclick = function() {
 	ctx.fill();
 	ctx.closePath();
 }
+
 document.getElementById('MontColor8').onclick = function() {
+
 	// (1)
 	ctx.beginPath();
 	ctx.fillStyle = 'olive';
@@ -465,7 +478,9 @@ document.getElementById('MontColor8').onclick = function() {
 	ctx.fill();
 	ctx.closePath();
 }
+
 document.getElementById('MontColor9').onclick = function() {
+
 	// (1)
 	ctx.beginPath();
 	ctx.fillStyle = 'mintcream';
@@ -516,7 +531,9 @@ document.getElementById('MontColor9').onclick = function() {
 	ctx.fill();
 	ctx.closePath();
 }
+
 document.getElementById('MontColor10').onclick = function() {
+
 	// (1)
 	ctx.beginPath();
 	ctx.fillStyle = 'peru';
@@ -567,7 +584,9 @@ document.getElementById('MontColor10').onclick = function() {
 	ctx.fill();
 	ctx.closePath();
 }
+
 document.getElementById('MontColor11').onclick = function() {
+
 	// (1)
 	ctx.beginPath();
 	ctx.fillStyle = 'royalblue';
@@ -618,7 +637,9 @@ document.getElementById('MontColor11').onclick = function() {
 	ctx.fill();
 	ctx.closePath();
 }
+
 document.getElementById('MontColor12').onclick = function() {
+
 	// (1)
 	ctx.beginPath();
 	ctx.fillStyle = 'springgreen';
@@ -669,7 +690,9 @@ document.getElementById('MontColor12').onclick = function() {
 	ctx.fill();
 	ctx.closePath();
 }
+
 document.getElementById('MontColor13').onclick = function() {
+
 	// (1)
 	ctx.beginPath();
 	ctx.fillStyle = 'peachpuff';
@@ -720,7 +743,9 @@ document.getElementById('MontColor13').onclick = function() {
 	ctx.fill();
 	ctx.closePath();
 }
+
 document.getElementById('MontColor14').onclick = function() {
+
 	// (1)
 	ctx.beginPath();
 	ctx.fillStyle = 'rosybrown';
@@ -771,7 +796,9 @@ document.getElementById('MontColor14').onclick = function() {
 	ctx.fill();
 	ctx.closePath();
 }
+
 document.getElementById('MontColor15').onclick = function() {
+
 	// (1)
 	ctx.beginPath();
 	ctx.fillStyle = 'lightgreen';
@@ -822,7 +849,9 @@ document.getElementById('MontColor15').onclick = function() {
 	ctx.fill();
 	ctx.closePath();	
 }
+
 document.getElementById('MontColor16').onclick = function() {
+
 	// (1)
 	ctx.beginPath();
 	ctx.fillStyle = 'orange';
@@ -873,7 +902,9 @@ document.getElementById('MontColor16').onclick = function() {
 	ctx.fill();
 	ctx.closePath();
 }
+
 document.getElementById('MontColor17').onclick = function() {
+
 	// (1)
 	ctx.beginPath();
 	ctx.fillStyle = 'lavender';
@@ -924,6 +955,7 @@ document.getElementById('MontColor17').onclick = function() {
 	ctx.fill();
 	ctx.closePath();
 }
+
 document.getElementById('MontColor18').onclick =  function() {
 	// (1)
 	ctx.beginPath();
