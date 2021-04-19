@@ -1,4 +1,4 @@
-# 0.9-HighWay-ColorStreet
+# HighWay-ColorStreet
 ## road through canvas with the option to change colors to each part of the canvas
 
 ## Starting 🎨	
