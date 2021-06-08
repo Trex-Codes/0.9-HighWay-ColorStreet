@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>HighWay-ColorStreet</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="author" content="Trex-Codes">
+	<meta name="Description" content="Highway ColorStreet Animation">
+	<meta name="keywords" content="Trex-Codes, ColorStreet, Animation, Highway, HighWay-ColorStreet">
+	<link rel="stylesheet" href="Styles2.css">
+</head>
+	<body>
+		
+	<!-- CANVAS  -->
+	<canvas id="CanvasHTml"></canvas>
+	
+	<article>
+		<button class="btn_Sun" type="submit" id="Change_Object_Sun">Change color <br> Sun</button>
+		<button class="btn_Moun" type="submit" id="Change_Object_Moun">Change color <br> Mountains</button>
+		<button class="btn_Higwa" type="submit" id="Change_Object_HigWa">Change color <br> Highway</button>
+		<button class="btn_HigwaLine" type="submit" id="Change_Object_LinesHigWa">Change color <br> Lines Highway</button>
+		<button class="btn_Sky" class="btns" type="submit" id="Change_Object_Sky">Change color <br> Sky</button>
+
+		<button type="submit" id="hide_Btns">Hide BTNS</button>
+	</article>
+
+<!-- =============================== -->
+<!-- DIVS CONTENTS PALETTE OF COLORS -->
+<!-- =============================== -->
+
+<section class="RectContent1" id="cuadroSun">
+	<div class="Icon_Top"></div>
+
+	<div class="SunRects" id="suncolor1"></div>
+	<div class="SunRects" id="suncolor2"></div>
+	<div class="SunRects" id="suncolor3"></div>
+	<div class="SunRects" id="suncolor4"></div>
+	<div class="SunRects" id="suncolor5"></div>
+	<div class="SunRects" id="suncolor6"></div>
+	<div class="SunRects" id="suncolor7"></div>
+	<div class="SunRects" id="suncolor8"></div>
+	<div class="SunRects" id="suncolor9"></div>
+	<div class="SunRects" id="suncolor10"></div>
+	<div class="SunRects" id="suncolor11"></div>
+	<div class="SunRects" id="suncolor12"></div>
+	<div class="SunRects" id="suncolor13"></div>
+	<div class="SunRects" id="suncolor14"></div>
+	<div class="SunRects" id="suncolor15"></div>
+	<div class="SunRects" id="suncolor16"></div>
+	<div class="SunRects" id="suncolor17"></div>
+	<div class="SunRects" id="suncolor18"></div>
+</section>
+
+<section class="RectContent2" id="CuadroMountains">
+	<div class="Icon_Top"></div>
+
+	<div class="MountRects" id="MontColor1"></div>
+	<div class="MountRects" id="MontColor2"></div>
+	<div class="MountRects" id="MontColor3"></div>
+	<div class="MountRects" id="MontColor4"></div>
+	<div class="MountRects" id="MontColor5"></div>
+	<div class="MountRects" id="MontColor6"></div>
+	<div class="MountRects" id="MontColor7"></div>
+	<div class="MountRects" id="MontColor8"></div>
+	<div class="MountRects" id="MontColor9"></div>
+	<div class="MountRects" id="MontColor10"></div>
+	<div class="MountRects" id="MontColor11"></div>
+	<div class="MountRects" id="MontColor12"></div>
+	<div class="MountRects" id="MontColor13"></div>
+	<div class="MountRects" id="MontColor14"></div>
+	<div class="MountRects" id="MontColor15"></div>
+	<div class="MountRects" id="MontColor16"></div>
+	<div class="MountRects" id="MontColor17"></div>
+	<div class="MountRects" id="MontColor18"></div>
+</section>
+
+<section class="RectContent3" id="cuadroHighWay">
+	<div class="Icon_Top"></div>
+
+	<div class="HighWayRects" id="HighWayColor1"></div>
+	<div class="HighWayRects" id="HighWayColor2"></div>
+	<div class="HighWayRects" id="HighWayColor3"></div>
+	<div class="HighWayRects" id="HighWayColor4"></div>
+	<div class="HighWayRects" id="HighWayColor5"></div>
+	<div class="HighWayRects" id="HighWayColor6"></div>
+	<div class="HighWayRects" id="HighWayColor7"></div>
+	<div class="HighWayRects" id="HighWayColor8"></div>
+	<div class="HighWayRects" id="HighWayColor9"></div>
+	<div class="HighWayRects" id="HighWayColor10"></div>
+	<div class="HighWayRects" id="HighWayColor11"></div>
+	<div class="HighWayRects" id="HighWayColor12"></div>
+	<div class="HighWayRects" id="HighWayColor13"></div>
+	<div class="HighWayRects" id="HighWayColor14"></div>
+	<div class="HighWayRects" id="HighWayColor15"></div>
+	<div class="HighWayRects" id="HighWayColor16"></div>
+	<div class="HighWayRects" id="HighWayColor17"></div>
+	<div class="HighWayRects" id="HighWayColor18"></div>
+</section>
+
+<section class="RectContent4" id="CuadroHighLines">
+	<div class="Icon_Top"></div>
+
+	<div class="HighLinesRects" id="HighWayLinesColor1"></div>
+	<div class="HighLinesRects" id="HighWayLinesColor2"></div>
+	<div class="HighLinesRects" id="HighWayLinesColor3"></div>
+	<div class="HighLinesRects" id="HighWayLinesColor4"></div>
+	<div class="HighLinesRects" id="HighWayLinesColor5"></div>
+	<div class="HighLinesRects" id="HighWayLinesColor6"></div>
+	<div class="HighLinesRects" id="HighWayLinesColor7"></div>
+	<div class="HighLinesRects" id="HighWayLinesColor8"></div>
+	<div class="HighLinesRects" id="HighWayLinesColor9"></div>
+	<div class="HighLinesRects" id="HighWayLinesColor10"></div>
+	<div class="HighLinesRects" id="HighWayLinesColor11"></div>
+	<div class="HighLinesRects" id="HighWayLinesColor12"></div>
+	<div class="HighLinesRects" id="HighWayLinesColor13"></div>
+	<div class="HighLinesRects" id="HighWayLinesColor14"></div>
+	<div class="HighLinesRects" id="HighWayLinesColor15"></div>
+	<div class="HighLinesRects" id="HighWayLinesColor16"></div>
+	<div class="HighLinesRects" id="HighWayLinesColor17"></div>
+	<div class="HighLinesRects" id="HighWayLinesColor18"></div>
+</section>
+
+<section class="RectContent5" id="CuadroSky">
+	<div class="Icon_Top"></div>
+
+	<div class="SkyRects" id="SkyColor1"></div>
+	<div class="SkyRects" id="SkyColor2"></div>
+	<div class="SkyRects" id="SkyColor3"></div>
+	<div class="SkyRects" id="SkyColor4"></div>
+	<div class="SkyRects" id="SkyColor5"></div>
+	<div class="SkyRects" id="SkyColor6"></div>
+	<div class="SkyRects" id="SkyColor7"></div>
+	<div class="SkyRects" id="SkyColor8"></div>
+	<div class="SkyRects" id="SkyColor9"></div>
+	<div class="SkyRects" id="SkyColor10"></div>
+	<div class="SkyRects" id="SkyColor11"></div>
+	<div class="SkyRects" id="SkyColor12"></div>
+	<div class="SkyRects" id="SkyColor13"></div>
+	<div class="SkyRects" id="SkyColor14"></div>
+	<div class="SkyRects" id="SkyColor15"></div>
+	<div class="SkyRects" id="SkyColor16"></div>
+	<div class="SkyRects" id="SkyColor17"></div>
+	<div class="SkyRects" id="SkyColor18"></div>
+</section>
+
+	<!-- SCRIPTS -->
+	<script type="text/javascript" src="Hidden_Palettes.js"></script>
+	<script type="text/javascript" src="Canvas2.js"></script>
+</body>
+</html>
